@@ -1,0 +1,140 @@
+:root {
+    --bg-dark: #0a0a0f;
+    --glass-dark: rgba(18, 18, 24, 0.8);
+    --border-dark: rgba(255, 255, 255, 0.1);
+    --shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-dark);
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(108, 92, 231, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(108, 92, 231, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: background-color 0.6s, background-image 0.6s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.container {
+    background: var(--glass-dark);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid var(--border-dark);
+    border-radius: 24px;
+    padding: 50px 40px;
+    text-align: center;
+    max-width: 440px;
+    width: 100%;
+    transition: all 0.4s ease;
+    box-shadow: var(--shadow);
+    color: white;
+    box-sizing: border-box;
+
+}
+
+.container:hover {
+    box-shadow: 0 0px 20px rgba(255, 2, 255, 0.203);
+}
+
+
+#upload {
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#upload::-webkit-file-upload-button {
+    background: linear-gradient(120deg, #ff6b6b 0%, #ffa45a 100%);
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+
+#upload:hover {
+    filter: drop-shadow(0px 0px 20px rgba(255, 110, 90, 0.32))
+            drop-shadow(0px 0px 40px rgba(255, 110, 90, 0.32))
+            drop-shadow(0px 0px 60px rgba(255, 110, 90, 0.32));
+}
+
+
+#download , #ads{
+    text-decoration: none;
+    color: inherit;
+    border: inherit;
+    padding: 10px 10px;
+    border-radius: inherit;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+#ads {
+      margin-top: 10px;
+    
+   
+  --grad-x: 20%;
+  --grad-y: 30%;
+  --grad-alpha: 0.15;
+
+  background-image: radial-gradient(
+    circle at var(--grad-x) var(--grad-y),
+    rgba(108, 92, 231, var(--grad-alpha)) 0%,
+    transparent 50%
+  );
+
+  animation: woo 2s ease-in-out infinite alternate; 
+
+}
+@keyframes woo {
+  0% {
+    --grad-x: 20%;
+    --grad-y: 30%;
+    --grad-alpha: 0.15;
+  }
+  100% {
+    --grad-x: 80%;
+    --grad-y: 70%;
+    --grad-alpha: 0.1;
+  }
+}
+@property --grad-x {
+  syntax: '<percentage>';
+  initial-value: 20%;
+  inherits: false;
+}
+@property --grad-y {
+  syntax: '<percentage>';
+  initial-value: 30%;
+  inherits: false;
+}
+@property --grad-alpha {
+  syntax: '<number>';
+  initial-value: 0.15;
+  inherits: false;
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    body {
+        padding: 20px 10px;
+    }
+}
