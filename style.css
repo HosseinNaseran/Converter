@@ -94,7 +94,7 @@ header {
 }
 
 .headerBottomRight h1 {
-    width: 18dvw;
+    width: 2rem;
     font-size: 50px;
 }
 
@@ -539,5 +539,15 @@ h2 {
     }
     .headerTopItem:nth-child(2){
         display: none;
+    }
+    .headerBottomRight h1{
+        font-size:45px;
+    }
+
+    .headerBottomRight p {
+        width: 100%;
+    }
+    .headerBottomRightButtons{
+        justify-content: center;
     }
 }
