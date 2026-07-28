@@ -1,15 +1,18 @@
-# Converter
+# WebP Image Converter
 
 A simple, client‑side tool to convert images to WebP format — directly in your browser.
+
+**Live Demo:** [View Website](https://hosseinnaseran.github.io/Converter)
 
 ---
 
 ## About
 
-**Converter** is a lightweight web page that lets you turn any image into a WebP file.  
+A lightweight browser-based tool that converts images to WebP format directly in your browser.
+
 All processing happens locally — nothing is uploaded to any server.
 
-WebP typically produces **smaller files** than JPEG or PNG, which helps with page load times and bandwidth usage.
+WebP typically produces **smaller files** than JPEG or PNG, which helps improve page load times and reduce bandwidth usage.
 
 ---
 
@@ -22,7 +25,7 @@ WebP typically produces **smaller files** than JPEG or PNG, which helps with pag
 
 ---
 
-## Built With
+## Tech Stack
 
 - HTML5
 - CSS3  
@@ -30,21 +33,20 @@ WebP typically produces **smaller files** than JPEG or PNG, which helps with pag
 
 ---
 
-## Getting Started
+## Preview
 
-You can use **Converter** in two ways:
+### Desktop
 
-### Option 1 — GitHub Pages (Quickest)
+![Desktop Preview](./assets/Screenshot-pc.png)
 
-Simply open the following link in your browser:
+### Mobile
 
-👉 **[https://hosseinnaseran.github.io/Converter](https://hosseinnaseran.github.io/Converter)**
+![Mobile Preview](./assets/Screenshot-mobile.png)
 
-No installation or download required — the tool runs entirely in your browser.
 
 ---
 
-### Option 2 — Run Locally
+## Getting Started
 
 Clone the repository and open the HTML file manually:
 
@@ -57,7 +59,7 @@ Then open `index.html` in any modern browser.
 
 ---
 
-> **Note:** Both methods work completely offline (after the initial load for the Pages version). All image processing stays on your device — nothing is ever sent to a server.
+> **Note:** All image processing happens locally on your device. No images are uploaded or sent to any server.
 ## Usage
 
 1. Click the upload button and choose an image.  
@@ -65,5 +67,13 @@ Then open `index.html` in any modern browser.
 3. Click **Download** to save the `.webp` file.
 
 ---
+## Author
 
-**Maintained by [HosseinNaseran](https://github.com/HosseinNaseran)**
+**Hossein Naseran**
+
+- [GitHub](https://github.com/HosseinNaseran)
+- [LinkedIn](https://www.linkedin.com/in/hosseinnaseran)
+
+---
+
+⭐ If you found this project useful, consider giving it a star on GitHub.
